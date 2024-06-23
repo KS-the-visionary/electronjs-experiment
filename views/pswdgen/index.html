@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="frame">
+        <div class="titlebar">
+            <p>Password Generator</p>
+            <div class="title">
+
+            </div>
+            <div class="title1">
+                <div class="titlebtn1"></div>
+                <div class="titlebtn2"></div>
+                <div class="titlebtn3"></div>
+            </div>
+        </div>
+
+        <div class="body">
+            <p class="text">Choose the setting you like from below</p>
+
+            <div class="settings">
+                <p class="text2">Choose a length for your password</p>
+                <span style="display: flex; gap: .2rem; justify-content: center;"><input type="range" id="pswdLen" min="1" max="30" value="8"> <p class="text" id="lenT">8</p></span>
+                <div class="options">
+                    <label class="opt"> <input type="checkbox" id="check1"> Include Lowercase alphabets</label>
+                    <label class="opt"> <input type="checkbox" id="check2"> Include Uppercase alphabets</label>
+                    <label class="opt"> <input type="checkbox" id="check3"> Include Numeric Digits</label>
+                    <label class="opt"> <input type="checkbox" id="check4"> Include Special Characters</label>
+                </div>
+                <input type="text" class="text2 pswd" value="Your Password Here" disabled id="password">
+            </div>
+
+            <div style="display: flex; justify-content: space-evenly; flex-direction: column; align-items: center; gap: 1rem;">
+                <p class="makePswdBtn" onclick="generatePassword()">Generate Password</p>
+                <a href="../home/index.html" class="text2">Go Back</a>
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>
