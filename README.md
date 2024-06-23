@@ -1,2 +1,13 @@
 # electronjs-experiment
-Testing Electron JS
+Just a simple Electron JS app I made....
+Use it if you want 🙃
+
+
+## Here's What it can do:
+- Encrypt and Decrypt Files with custom keys
+- Generate Random Passwords
+- Obfuscate JS and NodeJS Code
+- Download Youtube Videos
+- Steganography (Encoding and Decoding)
+- ROT Cipher string encoding
+- Use Virus Total (https://www.virustotal.com/gui/home/url) to scan a website
