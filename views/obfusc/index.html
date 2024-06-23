@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source Code Obfuscater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="frame">
+        <div class="titlebar">
+            <p>JavaScript Source Obfuscater</p>
+            <div class="title">
+
+            </div>
+            <div class="title1">
+                <div class="titlebtn1"></div>
+                <div class="titlebtn2"></div>
+                <div class="titlebtn3"></div>
+            </div>
+        </div>
+
+        <div class="body">
+            <div class="inputFile" style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+                <p class="text">Choose a JavaScript source file to obfuscate</p>
+                <button id="obfuscateBtn" class="filePicker">Choose your file</button>
+                <input type="file" id="source-file">
+            </div>
+
+            <button id="obfuscateBtn" class="obfuscateFile">Obfuscate File</button>
+
+            <a href="../home/index.html" class="text2">Go Back</a>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+
+</html>

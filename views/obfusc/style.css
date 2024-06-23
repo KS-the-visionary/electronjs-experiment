@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "jbm";
+    src: url("../assets/font.ttf");
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    width: 900px;
+    height: 600px;
+    border-radius: 30px;
+    background-color: #14232A;
+    box-shadow: 0px 0px 25px 3px #000000;
+    overflow: hidden;
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.titlebar {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    line-height: 60px;
+    font-family: 'jbm';
+    font-weight: 700;
+    color: #ffffff;
+    user-select: none;
+    font-size: 1.3rem;
+}
+
+.title {
+    width: 85%;
+    height: 60px;
+    translate: 0 -100%;
+    -webkit-app-region: drag;
+}
+
+.title1 {
+    width: 15%;
+    height: 60px;
+    justify-self: end;
+    translate: 0 -200%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.titlebtn1, .titlebtn2, .titlebtn3 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: scale 250ms ease;
+    user-select: none;
+}
+
+.titlebtn1:hover, .titlebtn2:hover, .titlebtn3:hover {
+    scale: 1.3;
+}
+
+.titlebtn1 {
+    background-color: #269E96;
+}
+
+.titlebtn2 {
+    background-color: #D39357;
+}
+
+.titlebtn3 {
+    background-color: #CF4B3A;
+}
+
+.body {
+    width: 100%;
+    height: calc(600px - 60px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text {
+    font-family: "jbm";
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+}
+
+.text2 {
+    font-family: "jbm";
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.opt {
+    font-family: "jbm";
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+    padding: .3rem;
+}
+
+
+.pswd {
+    border: 2px solid #ffffff;
+    width: 30rem;
+    height: 3rem;
+    outline: none;
+    background-color: transparent;
+}
+
+.makePswdBtn {
+    font-family: "jbm";
+    font-size: 16px;
+    font-weight: 900;
+    color: #ffffff;
+
+    
+    padding: .8rem 1.7rem .8rem 1.7rem;
+
+    border: 2px solid #ffffff;
+
+    cursor: pointer;
+
+    transition: all 250ms ease;
+
+    user-select: none;
+}
+
+.makePswdBtn:hover {
+    background-color: #ffffff;
+    color: #14232A;
+}
+
+#source-file {
+    display: none;
+}
+
+.sourceF {
+    font-family: "jbm";
+    font-size: 16px;
+    font-weight: 900;
+    color: #ffffff;
+
+    padding: .8rem 1.7rem .8rem 1.7rem;
+
+    border: 2px solid #ffffff;
+
+    cursor: pointer;
+
+    transition: all 250ms ease;
+
+    user-select: none;
+}
+
+.sourceF:hover {
+    background-color: #ffffff;
+    color: #14232A;
+}
+
+#obfuscateBtn {
+    font-family: "jbm";
+    font-size: 16px;
+    font-weight: 900;
+    color: #ffffff;
+    background-color: transparent;
+
+    padding: .8rem 1.7rem .8rem 1.7rem;
+
+    border: 2px solid #ffffff;
+
+    cursor: pointer;
+
+    transition: all 250ms ease;
+
+    user-select: none;
+    outline: none;
+}
+
+#obfuscateBtn:hover {
+    background-color: #ffffff;
+    color: #14232A;
+}
